@@ -1,0 +1,26 @@
+# Ambiente virtual do Python
+.venv/
+venv/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados brutos da API (grandes; podem ser coletados de novo pelos scripts)
+dados/brutos/
+*.json.gz
+
+# Segredos e configurações locais (e-mail de contato, tokens)
+.env
+
+# Editores e sistema operacional
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
