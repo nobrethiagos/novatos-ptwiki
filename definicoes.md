@@ -25,14 +25,16 @@ Todas as datas e horas estão em UTC, o fuso usado pela API da Wikipédia.
 - **Conferência:** etiquetas `mw-reverted`, `mw-undo`, `mw-rollback` e `mw-manual-revert`.
 - **Quem reverteu:**
   - robô: conta no grupo `bot`;
-  - ferramenta: etiqueta ou sumário de ferramenta semiautomática;
+  - ferramenta: etiqueta diff-tools ou outra etiqueta de ferramenta semiautomática;
   - humano: os demais casos.
 
 ## Mensagens na primeira semana
 
 - **Janela:** até 7 dias (168 horas) depois da criação da conta.
 - **Fonte:** revisões da página `User talk:<nome>` feitas por outras contas.
-- **Tipos:** nenhuma, boas-vindas, aviso, ambas ou outra. A classificação automática usa palavras-chave no sumário; na subamostra, o tom é codificado à mão (acolhedor, neutro ou hostil), conforme o livro de códigos.
+- **Boas-vindas automáticas:** a mensagem da conta `New user message`, enviada a cada conta nova, é registrada à parte e não conta como boas-vindas.
+- **Não contam:** mensagens desfeitas por outra revisão logo em seguida (por exemplo, avisos duplicados).
+- **Tipos (só mensagens escritas por pessoas):** nenhuma, boas-vindas, aviso, ambas ou outra.
 
 ## Permanência (variável dependente)
 
@@ -51,4 +53,3 @@ Todas as datas e horas estão em UTC, o fuso usado pela API da Wikipédia.
 ## Subamostra qualitativa
 
 - 200 novatos: 100 com a primeira edição revertida e 100 sem, sorteados com semente fixa `42`.
-
