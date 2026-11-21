@@ -28,3 +28,12 @@
 - Quem reverteu: nenhum robô; humano 505 (57,0%), ferramenta semiautomática 381 (43,0%: diff-tools 325, huggle 56).
 - Etiquetas da reversão: mw-manual-revert 398, mw-rollback 336, diff-tools 325, mw-undo 152, huggle 56.
 - Validação SHA1 (48 h) x etiqueta mw-reverted: 94,7% de concordância, kappa = 0,885 (as duas 840; só SHA1 46; só etiqueta 88; nenhuma 1.578).
+
+## Mensagens da primeira semana (coletado em 21/11/2026)
+
+- Novatos: 2.638; todos têm página de discussão e receberam as boas-vindas automáticas da conta "New user message" (100%).
+- Mensagens de outras contas na semana: 1.985. Aviso 1.463; bloqueio 375; outra 97; manutenção de robô 49 (não conta); boas-vindas humanas 1. Desfeitas (não contam): 28.
+- Recepção humana na primeira semana: nenhuma 1.666 (63,2%); aviso ou bloqueio 954 (36,2%); outra 18 (0,7%); boas-vindas humanas: nenhum novato.
+- Avisos enviados com ferramenta semiautomática: 891 (49,2%).
+- Classificação por palavras-chave no sumário (prefixo "av-", "nome impróprio", "propaganda", "mostrar previsão" etc.); resíduo de cerca de 5 avisos em "outra".
+- Consequência: H2 reformulada para "receber aviso na primeira semana está associado a menor permanência" (ver definicoes.md).
