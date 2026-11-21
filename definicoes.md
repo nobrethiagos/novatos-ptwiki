@@ -9,7 +9,7 @@ Todas as datas e horas estão em UTC, o fuso usado pela API da Wikipédia.
 - **H1:** novatos de boa-fé cuja primeira edição em artigo foi revertida permanecem menos do que os que não foram revertidos.
 - **H2:** novatos que recebem aviso na primeira semana permanecem menos do que os que não recebem.
   - A H2 original ("novatos que recebem boas-vindas permanecem mais") não pôde ser testada. Todos os novatos receberam as boas-vindas automáticas da conta `New user message`, e só 1 das 1.985 mensagens escritas por pessoas na primeira semana era de boas-vindas.
-- **Análise da permanência:** contas bloqueadas até 30 dias depois da criação ficam de fora, porque o bloqueio impede ou interrompe a edição.
+- **Análise da permanência:** ficam de fora as contas bloqueadas até 30 dias depois da criação, porque o bloqueio impede ou interrompe a edição, e os novatos cuja primeira edição em artigo foi feita mais de 7 dias depois da criação, para que a primeira experiência aconteça antes da janela de permanência.
 
 ## Coorte
 
