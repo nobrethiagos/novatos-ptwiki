@@ -37,3 +37,11 @@
 - Avisos enviados com ferramenta semiautomática: 891 (49,2%).
 - Classificação por palavras-chave no sumário (prefixo "av-", "nome impróprio", "propaganda", "mostrar previsão" etc.); resíduo de cerca de 5 avisos em "outra".
 - Consequência: H2 reformulada para "receber aviso na primeira semana está associado a menor permanência" (ver definicoes.md).
+
+## Bloqueios (coletado em 21/11/2026)
+
+- Registro de bloqueios de 01/03/2025 a 01/05/2025: 1.897 eventos.
+- Novatos bloqueados até 30 dias após a criação: 324 de 2.638 (12,3%); 90,7% deles na primeira semana; 61,7% por tempo indefinido; 1,5% parciais.
+- Motivos mais comuns: vandalismo contumaz; conta de propósito único nociva; nome de usuário impróprio (44); tentativa de vandalismo barrada por filtro (29); uso abusivo de várias contas (26); contorno de bloqueio (11).
+- Bloqueados por situação da primeira edição: revertida 235 de 886 (26,5%); não revertida 72 de 1.630 (4,4%).
+- Limitação: bloqueios globais (Meta-Wiki) não estão no registro local.
