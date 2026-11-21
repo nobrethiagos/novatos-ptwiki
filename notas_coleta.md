@@ -20,3 +20,11 @@
 - Novatos no estudo: 2.638 (73,5% das que editaram).
 - Primeira edição em artigo: 73 (2,8%) criaram artigo novo; 941 (35,7%) com etiqueta mw-reverted (prévia).
 - Funil: 13.696 registros → 8.677 contas na coorte → 3.591 editaram → 2.638 com edição visível em artigo.
+
+## Reversões da primeira edição (coletado em 21/11/2026)
+
+- Novatos analisados: 2.638. Situação: 1.630 não revertidas, 886 revertidas em 48 h, 36 autorreversões, 73 páginas novas, 13 indisponíveis.
+- Revertidas entre as comparáveis: 886 de 2.552 (34,7%); mediana até a reversão de 6,9 min; 78,7% na primeira hora.
+- Quem reverteu: nenhum robô; humano 505 (57,0%), ferramenta semiautomática 381 (43,0%: diff-tools 325, huggle 56).
+- Etiquetas da reversão: mw-manual-revert 398, mw-rollback 336, diff-tools 325, mw-undo 152, huggle 56.
+- Validação SHA1 (48 h) x etiqueta mw-reverted: 94,7% de concordância, kappa = 0,885 (as duas 840; só SHA1 46; só etiqueta 88; nenhuma 1.578).
