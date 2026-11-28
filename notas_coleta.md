@@ -24,7 +24,7 @@
 ## Reversões da primeira edição (coletado em 21/11/2026)
 
 - Novatos analisados: 2.638. Situação: 1.630 não revertidas, 886 revertidas em 48 h, 36 autorreversões, 73 páginas novas, 13 indisponíveis.
-- Revertidas entre as comparáveis: 886 de 2.552 (34,7%); mediana até a reversão de 6,9 min; 78,7% na primeira hora.
+- Revertidas entre as comparáveis (excluídas autorreversões, páginas novas e indisponíveis): 886 de 2.516 (35,2%); mediana até a reversão de 6,9 min; 78,7% na primeira hora.
 - Quem reverteu: nenhum robô; humano 505 (57,0%), ferramenta semiautomática 381 (43,0%: diff-tools 325, huggle 56).
 - Etiquetas da reversão: mw-manual-revert 398, mw-rollback 336, diff-tools 325, mw-undo 152, huggle 56.
 - Validação SHA1 (48 h) x etiqueta mw-reverted: 94,7% de concordância, kappa = 0,885 (as duas 840; só SHA1 46; só etiqueta 88; nenhuma 1.578).
