@@ -2,14 +2,15 @@
 
 ## Escopo e estado das etapas
 
-Este relatório aplica as etapas 3 e 4 do [passo a passo](./Passo%20a%20passo%20para%20concluir%20o%20projeto.pdf) ao desenho do [pitch](./Pitch_Computação_Social.pdf), usando os CSVs existentes em `dados/`.
+Este relatório aplica as etapas 3, 4 e 5 do [passo a passo](./Passo%20a%20passo%20para%20concluir%20o%20projeto.pdf) ao desenho do [pitch](./Pitch_Computação_Social.pdf), usando os CSVs existentes em `dados/`.
 
 | Etapa | Preparado/feito no repositório | Ainda depende da equipe |
 |---|---|---|
 | 3 — base e amostra | Base de 2.638 novatos conferida; elegibilidade e comparabilidade calculadas; amostra balanceada de 200 casos; planilha de auditoria de 50 mensagens; gráficos e tabelas de análise gerados. | Revisar manualmente as 50 classificações de mensagens e, se necessário, corrigir os dados/fontes. |
-| 4 — codificação qualitativa | Livro de códigos, planilha com links e campos para codificação, piloto de 30 casos e script para kappa preparados. | Dois integrantes codificarem independentemente o piloto; calcular e discutir kappa; concluir a codificação e selecionar exemplos anonimizados. |
+| 4 — codificação qualitativa | Livro de códigos, planilha com links e campos para codificação e piloto de 30 casos preparados. O grupo discutiu e registrou consenso em `dados/piloto_codificador_1.csv`. | Codificar o restante da subamostra; selecionar exemplos anonimizados. O piloto não é dupla codificação independente e não fornece kappa. |
+| 5 — análise e apresentação | Respostas quantitativas a QP1–QP3, gráficos, tabelas e notebook reprodutível registrados em [etapa5.md](./etapa5.md) e [analise_etapa5.ipynb](./analise_etapa5.ipynb). | Revisar as classificações automáticas de mensagens, concluir a codificação qualitativa e preparar os slides. |
 
-As categorias qualitativas foram deixadas em branco intencionalmente: os CSVs não contêm o texto integral das mensagens e a codificação de intenção, explicação e tom exige leitura humana contextual. Portanto, ainda não há resultados qualitativos nem kappa calculável.
+As categorias qualitativas da amostra completa permanecem em branco: os CSVs não contêm o texto integral das mensagens e a codificação de intenção, explicação e tom exige leitura humana contextual. O piloto de 30 casos foi categorizado pelo grupo em discussão, como consenso exploratório; não foi codificado independentemente por dois avaliadores, então não há kappa a calcular ou reportar. Os resultados do piloto não são estimativas para a amostra completa.
 
 ## Dados e definições
 
@@ -17,7 +18,7 @@ Os resultados vêm de `dados/base.csv`, `dados/coorte.csv`, `dados/novatos.csv` 
 
 Isso mantém a definição reprodutível da base e do [arquivo de definições](./definicoes.md). O pitch descrevia a janela de permanência a partir da primeira edição; aqui foi usada a definição operacional existente, a partir da criação da conta. Essa diferença deve ser mencionada na metodologia final.
 
-O universo é de contas criadas em março de 2025, não março a maio como no desenho inicial do pitch. Os bloqueios globais, edições apagadas e páginas com revisões indisponíveis também limitam a cobertura. “Aviso” na análise inclui mensagens classificadas como aviso ou bloqueio; boas-vindas automáticas não contam como contato humano.
+O universo é de contas criadas em março de 2025, não março a maio como no desenho inicial do pitch. Os bloqueios globais, edições apagadas e páginas com revisões indisponíveis também limitam a cobertura. “Aviso” na análise inclui mensagens classificadas como aviso ou bloqueio por palavras-chave no sumário da edição; a categoria não identifica um motivo específico nem garante uma advertência formal. Boas-vindas automáticas não contam como contato humano.
 
 Há uma divergência no resumo preliminar do passo a passo: ele usa 2.552 como denominador de reversões comparáveis, mas esse total inclui 36 autorreversões. Como as definições operacionais excluem autorreversões, a base e os scripts usam 2.516 casos comparáveis (886 revertidos + 1.630 não revertidos); a taxa correspondente é 35,2%. Essa correção também foi registrada em [notas_coleta.md](./notas_coleta.md).
 
@@ -34,8 +35,13 @@ Na base elegível, 168 de 2.100 novatos (8,0%) editaram entre os dias 31 e 90. E
 - Entre 2.516 primeiras edições comparáveis em toda a base — excluídas autorreversões, páginas novas e revisões indisponíveis —, 886 (35,2%; IC95% 33,4–37,1%) foram revertidas em até 48 horas. A mediana até a reversão foi de 6,9 minutos; 78,7% (IC95% 75,8–81,2%) ocorreram na primeira hora.
 - Das 886 reversões, 505 (57,0%) foram atribuídas a humanos e 381 (43,0%) a ferramentas semiautomáticas; nenhuma foi atribuída a robô.
 - Na primeira semana, 1.666 de 2.638 novatos (63,2%; IC95% 61,3–65,0%) não tiveram contato humano classificado; 954 (36,2%; IC95% 34,4–38,0%) receberam aviso ou bloqueio e 18 (0,7%; IC95% 0,4–1,1%) receberam outra mensagem. Houve uma mensagem humana de boas-vindas, mas nenhum novato teve essa categoria como recepção semanal. A mensagem automática de boas-vindas foi excluída.
+- Das 886 reversões, 697 (78,7%) ocorreram em até uma hora, 165 (18,6%) entre uma e 24 horas e 24 (2,7%) entre 24 e 48 horas.
 
 Os dados de reversão e mensagens acima são descritivos da coorte completa; não representam, por si sós, o efeito dessas experiências sobre permanência.
+
+### P2 — autoria e explicação das reversões
+
+Das 886 reversões, 505 (57,0%) foram atribuídas a humanos e 381 (43,0%) a ferramentas semiautomáticas; nenhuma foi atribuída a robô. Havia sumário registrado em 882 (99,5%), mas isso não mede a qualidade da justificativa. No piloto consensual de 30 casos, 7 justificativas foram classificadas como específicas, 9 genéricas, 2 incertas e 12 não aplicáveis. Essas contagens descrevem somente o piloto; não estimam a distribuição de explicações entre todas as reversões.
 
 ### P3 — associação com permanência
 
@@ -54,6 +60,12 @@ Os testes e modelos são exploratórios, sem correção para múltiplas compara�
 ![Recepção na primeira semana](./graficos/recepcao_primeira_semana.png)
 
 ![Permanência por experiência](./graficos/permanencia_por_recepcao.png)
+
+![Tempo até a reversão](./graficos/tempo_ate_reversao.png)
+
+![Tipo de responsável pela reversão](./graficos/tipo_revertor_primeira_edicao.png)
+
+Os resultados, legendas para apresentação, roteiro de slides e ressalvas estão detalhados em [etapa5.md](./etapa5.md).
 
 ## Etapa 3 — base, verificações e arquivos
 
@@ -108,13 +120,13 @@ Codifica o tom da primeira mensagem humana válida na semana; exclua a mensagem 
 
 ### Piloto, concordância e exemplos para o artigo
 
-Dois integrantes devem preencher independentemente os arquivos `piloto_codificador_1.csv` e `piloto_codificador_2.csv`, cada qual sem acesso às respostas do outro e sem conversar antes de concluir. Depois, executar:
+O piloto previsto inicialmente como dupla codificação independente foi discutido coletivamente pelo grupo e registrado em `dados/piloto_codificador_1.csv`. O grupo decidiu não usar `dados/piloto_codificador_2.csv` como uma codificação independente; por isso, o piloto representa consenso e não permite calcular kappa. Se um novo piloto independente vier a ser feito no futuro, dois integrantes poderão preencher os arquivos sem acesso às respostas um do outro e sem conversar antes de concluir. Nesse fluxo, executar:
 
 ```bash
 .venv/bin/python -m scripts.avaliar_codificacao
 ```
 
-O script combina os arquivos pelo código do caso e calcula kappa de Cohen separadamente para boa-fé, explicação da reversão e tom da mensagem, usando somente pares completos. Com kappa abaixo de 0,7, discutam as divergências, revisem o livro e codifiquem um novo piloto independente antes de avançar. A saída atual informa que o kappa ainda não é calculável, pois os campos estão vazios. O preparador também impede sobrescrever planilhas que já contenham codificação manual.
+O script combina os arquivos pelo código do caso e calcula kappa de Cohen separadamente para boa-fé, explicação da reversão e tom da mensagem, usando somente pares completos. Esse cálculo só é válido para respostas independentes. O preparador também impede sobrescrever planilhas que já contenham codificação manual.
 
 Após o piloto, distribuam os casos restantes conforme `codificador_responsavel`. Selecionem exemplos de cada categoria apenas depois da codificação, parafraseiem-nos e removam nomes, IDs e detalhes que permitam identificar pessoas. Não publiquem mensagens integrais nem nomes de usuários no artigo.
 
@@ -128,4 +140,4 @@ O ambiente `.venv` está na raiz e as bibliotecas de análise foram acrescentada
 .venv/bin/python -m scripts.avaliar_codificacao
 ```
 
-O último comando só produzirá valores de kappa depois que a planilha tiver as codificações independentes do piloto.
+O último comando só deve ser usado se houver duas codificações independentes do mesmo piloto; não se aplica ao consenso coletivo registrado atualmente.
