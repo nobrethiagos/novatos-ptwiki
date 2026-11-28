@@ -1,0 +1,4 @@
+comparacao,variavel_exposicao,n,chi2,graus_liberdade,p_valor,correcao_yates,tabela_2x2
+H1: reversão x permanência,revertida,2015,20.761510668829825,1,5.201797117821162e-06,True,"exposto: não permaneceu=601, permaneceu=22; referência: não permaneceu=1260, permaneceu=132"
+H2: aviso x permanência,recebeu_aviso,2100,11.091378010347498,1,0.0008673001248052296,True,"exposto: não permaneceu=613, permaneceu=32; referência: não permaneceu=1319, permaneceu=136"
+H2: aviso x permanência entre revertidos,recebeu_aviso,623,0.21157347479502625,1,0.6455369161529052,True,"exposto: não permaneceu=481, permaneceu=19; referência: não permaneceu=120, permaneceu=3"
